@@ -1,13 +1,13 @@
 %1:
 pred([], []).
 pred([H | T], [H1 | T1]) :- H1 is H + 1, pred(T, T1).
-%?­ pred([1,2,3],[a,b,c]).
+%?­ pred([1,2,3],[a,b,c]).
 %false.
-%?­ pred([8,9],L).
+%?­ pred([8,9],L).
 %L = [9, 10].
-%?­ pred([1,2,3],[2,L]).
+%?­ pred([1,2,3],[2,L]).
 %false.
-%?­ pred([1,2],[2,X]).
+%?­ pred([1,2],[2,X]).
 %X = 3.
 %o predicado soma +1 em todos elementos da lista.
 
